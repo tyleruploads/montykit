@@ -73,7 +73,6 @@ def detect_lang(text: str) -> str:
     return TextBlob(text).detect_language()
 
 
-
 def text_difficulty(text: str) -> dict:
     """Determines the difficulty of text using multiple readability metrics.
 
