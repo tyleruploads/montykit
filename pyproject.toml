@@ -1,0 +1,32 @@
+[project]
+name = "montykit"
+version = "1.0.0"
+description = "A general-purpose Python utility kit."
+readme = "README.md"
+requires-python = ">=3.8"
+license = {text = "MIT"}
+keywords = ["utilities", "tools", "helpers", "monty", "general-purpose"]
+authors = [
+    {name = "Tyler", email = "tyleruploadspython@gmail.com"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+]
+dependencies = [
+    "textblob",
+    "textstat",
+]
+
+[project.urls]
+"Homepage" = "https://github.com/tyleruploads/montykit"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+
+[tool.setuptools.package-data]
+montykit = ["*.json"]
